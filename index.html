@@ -22,5 +22,13 @@
         <a href="https://taiven.com">Powered by Taiven</a>
       </p>
     </main>
+
+    <script>
+      const ref = new URL(location.href).searchParams.get("ref");
+      if (ref)
+        document.cookie = `ref=${encodeURIComponent(ref)}; expires=${new Date(
+          new Date().getTime() + 365 * 24 * 60 * 60 * 1000
+        ).toUTCString()}; path=/`;
+    </script>
   </body>
 </html>
