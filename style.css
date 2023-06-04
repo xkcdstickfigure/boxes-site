@@ -4,7 +4,7 @@
 }
 
 main {
-  margin: 64px 0 0;
+  margin: 64px 16px 16px;
 }
 
 h1 {
@@ -35,6 +35,13 @@ h1 {
   border: solid 4px #e5e7eb;
   border-radius: 16px;
   margin: 32px auto 0;
+}
+
+@media screen and (max-width: 440px) {
+  .screenshot {
+    width: 255px;
+    height: 308px;
+  }
 }
 
 .footer {
